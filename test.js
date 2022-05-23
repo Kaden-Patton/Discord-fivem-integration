@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client({ intents: Object.keys(Discord.Intents.FLAGS) });
 const fivem = require("discord-fivem-api");
-const server = new fivem.DiscordFivemApi("51.222.164.240:30510");
+const server = new fivem.DiscordFivemApi(config.ip);
 const config = require("./config.json");
 
 client.on("ready", () => {
